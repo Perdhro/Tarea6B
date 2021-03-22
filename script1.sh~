@@ -1,0 +1,19 @@
+v1=$1
+
+for i in $(cat nombres.txt);do
+    
+    mkdir $i;
+
+    for ((x=1;x<=$v1;x++))
+    do
+
+	let a=$x+1;
+	mkdir $i/personal$a;
+
+    done   
+done
+
+
+    
+
+
